@@ -1,0 +1,32 @@
+Traceback (most recent call last):
+  File "filter_patient_meds.py", line 9, in <module>
+    patient_meds = pd.read_csv('/scratch/users/shrestp/mover/EPIC_EMR/EPIC_EMR/EMR/patient_medications.csv', low_memory=False)
+  File "/share/software/user/open/py-scipystack/1.0_py36/lib/python3.6/site-packages/pandas/io/parsers.py", line 646, in parser_f
+    return _read(filepath_or_buffer, kwds)
+  File "/share/software/user/open/py-scipystack/1.0_py36/lib/python3.6/site-packages/pandas/io/parsers.py", line 401, in _read
+    data = parser.read()
+  File "/share/software/user/open/py-scipystack/1.0_py36/lib/python3.6/site-packages/pandas/io/parsers.py", line 939, in read
+    ret = self._engine.read(nrows)
+  File "/share/software/user/open/py-scipystack/1.0_py36/lib/python3.6/site-packages/pandas/io/parsers.py", line 1508, in read
+    data = self._reader.read(nrows)
+  File "pandas/parser.pyx", line 851, in pandas.parser.TextReader.read (pandas/parser.c:10438)
+  File "pandas/parser.pyx", line 939, in pandas.parser.TextReader._read_rows (pandas/parser.c:11607)
+  File "pandas/parser.pyx", line 2024, in pandas.parser.raise_parser_error (pandas/parser.c:27037)
+pandas.io.common.CParserError: Error tokenizing data. C error: out of memory
+Traceback (most recent call last):
+  File "filter_patient_meds.py", line 9, in <module>
+    patient_meds = pd.read_csv('/scratch/users/shrestp/mover/EPIC_EMR/EPIC_EMR/EMR/patient_medications.csv', low_memory=False)
+  File "/share/software/user/open/py-scipystack/1.0_py36/lib/python3.6/site-packages/pandas/io/parsers.py", line 646, in parser_f
+    return _read(filepath_or_buffer, kwds)
+  File "/share/software/user/open/py-scipystack/1.0_py36/lib/python3.6/site-packages/pandas/io/parsers.py", line 401, in _read
+    data = parser.read()
+  File "/share/software/user/open/py-scipystack/1.0_py36/lib/python3.6/site-packages/pandas/io/parsers.py", line 939, in read
+    ret = self._engine.read(nrows)
+  File "/share/software/user/open/py-scipystack/1.0_py36/lib/python3.6/site-packages/pandas/io/parsers.py", line 1508, in read
+    data = self._reader.read(nrows)
+  File "pandas/parser.pyx", line 851, in pandas.parser.TextReader.read (pandas/parser.c:10438)
+  File "pandas/parser.pyx", line 939, in pandas.parser.TextReader._read_rows (pandas/parser.c:11607)
+  File "pandas/parser.pyx", line 2024, in pandas.parser.raise_parser_error (pandas/parser.c:27037)
+pandas.io.common.CParserError: Error tokenizing data. C error: out of memory
+/var/spool/slurmd/job51652071/slurm_script: line 15: 166646 Segmentation fault      python3 filter_patient_meds.py
+/var/spool/slurmd/job51652076/slurm_script: line 15: 166644 Segmentation fault      python3 filter_patient_meds.py
